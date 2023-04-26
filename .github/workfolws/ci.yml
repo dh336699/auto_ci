@@ -2,7 +2,7 @@ name: GitHub Actions Build and Deploy Demo   # 这个构建的名字，会出现
 on:                                          # 监听"哪个分支" 的 "那个动作" 这里的意思是监听master分支的push动作
   push:
     branches:
-      - master
+      - main
 jobs:                                        # 表示执行的一项或者多项任务
   build-and-deploy:                          # job的id
     runs-on: ubuntu-latest                   # 指所需的运行环境
