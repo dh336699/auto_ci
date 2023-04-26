@@ -16,7 +16,7 @@ jobs:                                        # 表示执行的一项或者多项
           yarn install
           yarn build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Github的token 阮一峰老师的博客里面有介绍过
           BRANCH: gh-pages                          # 部署到那个分支
